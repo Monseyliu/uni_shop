@@ -2,15 +2,108 @@
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
+			"style": {}
+		}, {
+			"path": "pages/cart/cart",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "易趣购物",
+				"enablePullDownRefresh": false
 			}
+
+		}, {
+			"path": "pages/member/member",
+			"style": {
+				"navigationBarTitleText": "易趣购物",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "易趣购物",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	],
+	    ,{
+            "path" : "pages/goods/goods",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品列表",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/contact/contact",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "易趣购物",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/pics/pics",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "易趣购物",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/videos/videos",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "易趣购物",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/goods_list/goods_list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "易趣购物",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "易趣购物",
+		"navigationBarBackgroundColor": "#d84df8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"selectedColor":"#d84df8",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/icon/home.png",
+				"selectedIconPath":"static/icon/home-active.png"
+			},
+			{
+				"text":"新闻",
+				"pagePath":"pages/news/news",
+				"iconPath":"static/icon/new.png",
+				"selectedIconPath":"static/icon/new-active.png"
+			},
+			{
+				"text":"购物车",
+				"pagePath":"pages/cart/cart",
+				"iconPath":"static/icon/cart.png",
+				"selectedIconPath":"static/icon/cart-active.png"
+			},
+			{
+				"text":"会员中心",
+				"pagePath":"pages/member/member",
+				"iconPath":"static/icon/user.png",
+				"selectedIconPath":"static/icon/user-active.png"
+			}
+		]
 	}
 }
