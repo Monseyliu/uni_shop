@@ -32,7 +32,7 @@
 
 <style lang="scss">
 	.good_list {
-		padding: 0 15rpx;
+		padding: 0 7rpx;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;

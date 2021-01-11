@@ -24,44 +24,33 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.good_list {
-  padding: 0 7rpx;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+page {
+  height: 100%;
 }
-.good_list .goods_item {
-  background-color: #fff;
-  width: 355rpx;
-  margin: 10rpx 0;
-  padding: 15rpx;
-  box-sizing: border-box;
+.pics {
+  height: 100%;
 }
-.good_list .goods_item image {
-  width: 80%;
-  height: 150px;
-  display: block;
-  margin: 0 auto;
+.pics .scroll_left {
+  width: 200rpx;
+  border-right: 1px solid #eee;
 }
-.good_list .goods_item .goods_price {
-  color: #e54d42;
-  font-size: 36rpx;
-  margin: 10rpx 0 0 0;
+.pics .scroll_left view {
+  height: 60px;
+  line-height: 60px;
+  color: #333;
+  text-align: center;
+  font-size: 30rpx;
+  border-top: 1px solid #eee;
 }
-.good_list .goods_item .goods_price .origin_price {
-  color: #ccc;
-  font-size: 28rpx;
-  margin-left: 14rpx;
-  text-decoration: line-through;
+.pics .scroll_left .active_color {
+  background-color: #d84df8;
+  color: #fff;
 }
-.good_list .goods_item .goods_info {
-  font-size: 28rpx;
-  line-height: 50rpx;
-  padding: 10rpx 0 15rpx 0;
+.pics .scroll_right {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 100%;
+  width: 530rpx;
 }
 
