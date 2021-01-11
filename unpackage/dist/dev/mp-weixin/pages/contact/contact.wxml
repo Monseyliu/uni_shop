@@ -1,1 +1,1 @@
-<view>联系我们</view>
+<view class="contact"><image src="https://www.yllook.com/attachment/images/2020/05/18/image_1589787590_HXoDkKf7.png" mode></image><view class="info"><view data-event-opts="{{[['tap',[['callPhone',['$event']]]]]}}" bindtap="__e">联系电话：400-8980-5578 （点击拨打）</view><view>商家地址：广东省深圳市福田区八卦岭街道88号</view></view><map class="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" color="#fc0722" scale="{{scale}}"></map></view>

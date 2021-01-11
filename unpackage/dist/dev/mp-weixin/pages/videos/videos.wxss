@@ -24,44 +24,37 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.good_list {
-  padding: 0 7rpx;
+.wrap .item_box {
+  margin-bottom: 10px;
+  height: 100px;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  border-bottom: 1px solid #d84df8;
+}
+.wrap .item_box .pic {
+  height: 100%;
+  width: 230rpx;
+  margin-right: 10px;
+}
+.wrap .item_box .pic image {
+  width: 100%;
+  height: 100%;
+}
+.wrap .item_box .info {
+  width: 300px;
+  padding: 10px 0;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-}
-.good_list .goods_item {
-  background-color: #fff;
-  width: 355rpx;
-  margin: 10rpx 0;
-  padding: 15rpx;
-  box-sizing: border-box;
-}
-.good_list .goods_item image {
-  width: 80%;
-  height: 150px;
-  display: block;
-  margin: 0 auto;
-}
-.good_list .goods_item .goods_price {
-  color: #e54d42;
-  font-size: 36rpx;
-  margin: 10rpx 0 0 0;
-}
-.good_list .goods_item .goods_price .origin_price {
-  color: #ccc;
-  font-size: 28rpx;
-  margin-left: 14rpx;
-  text-decoration: line-through;
-}
-.good_list .goods_item .goods_info {
-  font-size: 28rpx;
-  line-height: 50rpx;
-  padding: 10rpx 0 15rpx 0;
 }
 
