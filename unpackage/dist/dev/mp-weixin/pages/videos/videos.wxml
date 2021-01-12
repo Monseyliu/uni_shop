@@ -1,1 +1,1 @@
-<view class="wrap"><block wx:for="{{videoInfo}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><view class="item_box"><view class="pic"><image src="{{item.picture}}"></image></view><view class="info"><view class="title">{{item.name}}</view><view class="timeView"><text>发表时间：2021-01-02</text><text>{{'浏览：'+item.view+"次"}}</text></view></view></view></block></view>
+<view class="wrap"><news-item vue-id="5f81df00-1" newsInfo="{{videoInfo}}" bind:__l="__l"></news-item></view>

@@ -212,30 +212,17 @@ var _goods_list = _interopRequireDefault(__webpack_require__(/*! ../../component
                 console.log(res);
                 _this.swipers = res.data.data.adv.index_top;
                 _this.goodsHotList = res.data.data.product_hot;
-                console.log(_this.goodsHotList);
-                // async await 异步方法
-                // const res = await uni.request({
-                // 	url:"http://demo.rageframe.com/api/tiny-shop/v1/index/index",
-                // })
-                // console.log(res)
-                // 常规方法
-                // uni.request({
-                // 	url:"http://demo.rageframe.com/api/tiny-shop/v1/index/index",
-                // 	success: res => {
-                // 		if(res.statusCode !== 200 ){
-                // 			return uni.showToast({
-                // 				title:'获取数据失败'
-                // 			})
-                // 		}
-                // 		console.log(res)
-                // 		this.swipers = res.data.data.adv.index_top
-                // 		console.log(this.swipers)
-                // 	}
-                // })
-              case 7:case "end":return _context.stop();}}}, _callee);}))();},
+                console.log(_this.goodsHotList);case 7:case "end":return _context.stop();}}}, _callee);}))();
+    },
     navItemClick: function navItemClick(url) {
       uni.navigateTo({
         url: url });
+
+    },
+    goGoodsDetail: function goGoodsDetail(id) {
+      // 跳转到商品详情页
+      uni.navigateTo({
+        url: "../goods-detail/goods-detail?id=" + id });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
@@ -380,7 +367,11 @@ var _default =
 
   },
   props: ['goodsHotList'],
-  methods: {} };exports.default = _default;
+  methods: {
+    navigatorTo: function navigatorTo(id) {
+      // 调用父组件去商品详情页方法
+      this.$emit('itemGoodsDetail', id);
+    } } };exports.default = _default;
 
 /***/ }),
 /* 26 */

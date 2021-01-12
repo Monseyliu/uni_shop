@@ -140,7 +140,11 @@ var _default =
 
   },
   props: ['goodsHotList'],
-  methods: {} };exports.default = _default;
+  methods: {
+    navigatorTo: function navigatorTo(id) {
+      // 调用父组件去商品详情页方法
+      this.$emit('itemGoodsDetail', id);
+    } } };exports.default = _default;
 
 /***/ }),
 
@@ -173,7 +177,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 74:
+/***/ 85:
 /*!*******************************************************************************************************************!*\
   !*** /Users/huangzubin13/Desktop/Project/uniApp/uni_shop/main.js?{"page":"components%2Fgoods_list%2Fgoods_list"} ***!
   \*******************************************************************************************************************/
@@ -189,5 +193,5 @@ createPage(_goods_list.default);
 
 /***/ })
 
-},[[74,"common/runtime","common/vendor"]]]);
+},[[85,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/components/goods_list/goods_list.js.map

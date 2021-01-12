@@ -1,6 +1,6 @@
 <template>
 	<view class="good_list">
-		<goodsList :goodsHotList="goodsHotList"></goodsList>
+		<goodsList :goodsHotList="goodsHotList" @itemGoodsDetail="goGoodsDetail"></goodsList>
 		<view class="isOver" v-if="flag">---已展示全部数据---</view>
 	</view>
 </template>
@@ -27,7 +27,14 @@
 				})
 				this.goodsHotList = [...this.goodsHotList,...res.data.data.product_hot]
 			    callBack && callBack();
+			},
+			goGoodsDetail(id){
+				// 跳转到商品详情页
+				uni.navigateTo({
+					url: "../goods-detail/goods-detail?id="+id
+				})
 			}
+			
 
 		},
 		components: {

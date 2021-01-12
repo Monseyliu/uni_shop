@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "易趣购物",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "news-item": "/components/news-item/news-item"
+  }
 }

@@ -19,7 +19,7 @@
 				推荐商品
 			</view>
 			<!-- 商品展示组件 -->
-			<goodsList :goodsHotList="goodsHotList"></goodsList>
+			<goodsList :goodsHotList="goodsHotList" @itemGoodsDetail="goGoodsDetail"></goodsList>
 		</view>
 		
 	</view>
@@ -75,31 +75,19 @@
 				this.swipers = res.data.data.adv.index_top
 				this.goodsHotList = res.data.data.product_hot
 				console.log(this.goodsHotList)
-				// async await 异步方法
-				// const res = await uni.request({
-				// 	url:"http://demo.rageframe.com/api/tiny-shop/v1/index/index",
-				// })
-				// console.log(res)
-				// 常规方法
-				// uni.request({
-				// 	url:"http://demo.rageframe.com/api/tiny-shop/v1/index/index",
-				// 	success: res => {
-				// 		if(res.statusCode !== 200 ){
-				// 			return uni.showToast({
-				// 				title:'获取数据失败'
-				// 			})
-				// 		}
-				// 		console.log(res)
-				// 		this.swipers = res.data.data.adv.index_top
-				// 		console.log(this.swipers)
-				// 	}
-				// })
 			},
 			navItemClick(url) {
 				uni.navigateTo({
 					url
 				})
+			},
+			goGoodsDetail(id){
+				// 跳转到商品详情页
+				uni.navigateTo({
+					url: "../goods-detail/goods-detail?id="+id
+				})
 			}
+			
 		}
 	}
 </script>

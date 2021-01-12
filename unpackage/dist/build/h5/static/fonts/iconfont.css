@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('~@/static/fonts/iconfont.eot?t=1610199640580'); /* IE9 */
+  src: url('~@/static/fonts/iconfont.eot?t=1610199640580#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQ8AAsAAAAACGAAAAPuAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDIgqEAINEATYCJAMUCwwABCAFhG0HWBtQB1GUD8oUsi8hJxteBEJAhNIC0FktCGCHcIxDeAF8pBhVvi4TmBiACKq1f3uWPjAEUAJKVIgqwkUoIBcnYywKcxUd/f53rfzdHJIr5V4dHSFns3+y2eFMpgjCEbrrqYLuq2odgSNQlVWo6pVsOrWhdLySb0/O1ycXeA8Apv/zGHtLOXdiXAyM09nJCGWuENMWEpy2G5FtaAf7wHgkpTfERXe+/zlmuigMGua3rV2iWrtwo70BjhJoQBF9kXSid0B4w9hNlAdxnsCgVbttutYzNAVpCjAtEG+lYJCWsio1pNBvaCVri/gGyfrT+8hjgK/87+MfKiKNpGZg7u033TFo65g4/l9LFAGy8dzQNpFxFCjEi1LvIySMHkUMOvxJTgJNKU9dpmdMTXEr65Stn5Tkf55oQP4wuCTGCh0xi6BLFomuWGQ6yV/IJRUMYgwfAfyUjNtj9imq1FotA0gERvf1DQxsLRwaXouOMkEJyexgDmvP+SFsG4nk5OsdfC2Sm+9BVrzEc98l5VV/amYKciOPpuzsNPyEbH9YHbRGtbGhdVm9at/UrgvT6XSVXtRzDpy9mclkKjmoPdc5o0Px89cZ+dB8Pt2fAkm1KKV6LYkiSq3FD1VvC/tX87v09vv/ZJuzITHbHxkjPv9l7wuSjeTLjwAlKesZgrO/zv8s1h+gLt7R0ow2WZt0g+wLqLv38RH2XH7Rbee7G6rj95vVbmcjPmHZy3r60Oq0w+vIOjJlbP5maU+ghN4h35/cKbm688OGnJx79HYOLIiojZyT1mkDyY/it7hj+nZfN91QJIvkH7ozGIwL6nupM6u099e4Ew7lHKqzDTe3c8Iu/DH2d5LjDYSwqiIR1/gG+wF64wop4JedWyQF8sfIR0BP5CahP3qc72ePR27T/7TMK236a3dOWtNTEuR1oF+itey3ylrWFFcBbLXYlVhq+6tzLyacMAht/NBimPR+HP1M6zChPyXTIOmzAlm/bWTBHoVqyFlo+l2EQUf0bh4yRSGiDODQGQHCuNuQjPoB2bgnyIJ9B9Wsn9CMB4FBd6JwzyG7ITM6FTKNMRo9QCV3HQM5dEZQOIEitJhKKjh1BlUgA7S8pCyb6EUH1RgLgr2iQmuDGsq1aY9wGVqWSz3lJpDrkrjWXkNpqVH2TSXctSHDVQpiNBRDRR1ASZzLYdDGWkbu9ycgIWRhVE1VR3gGUgKyd6pcibIWyF6t06rqWl4T2EuooGkGyqC4bFSP4EYWjLoor3xUAuK0EvEeYU+DUqme0VZbMr/efsZdMAg8vUaKHCVqNMOvJEdHJCQTbpjNmSN4PGRzzDBFh55kTkoQHggFCwAAAA==') format('woff2'),
+  url('~@/static/fonts/iconfont.woff?t=1610199640580') format('woff'),
+  url('~@/static/fonts/iconfont.ttf?t=1610199640580') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('~@/static/fonts/iconfont.svg?t=1610199640580#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dicengjiagou:before {
+  content: "\e98c";
+}
+
+.icon-cangchucangku:before {
+  content: "\e98d";
+}
+
+.icon-tupian:before {
+  content: "\e997";
+}
+
+.icon-suyuan:before {
+  content: "\e998";
+}
+

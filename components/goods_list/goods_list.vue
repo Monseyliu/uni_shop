@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="good_list">
-			<view class="goods_item" v-for="item in goodsHotList" :key="item.id">
+			<view @click="navigatorTo(item.id)" class="goods_item" v-for="item in goodsHotList" :key="item.id">
 				<image :src="item.picture" mode=""></image>
 				<view class="goods_price">
 					<text class="new_price">￥{{item.give_point}}</text>
@@ -25,7 +25,10 @@
 		},
 		props: ['goodsHotList'],
 		methods: {
-
+			navigatorTo(id){
+				// 调用父组件去商品详情页方法
+				this.$emit('itemGoodsDetail',id)
+			}
 		}
 	}
 </script>
